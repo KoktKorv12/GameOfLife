@@ -2,8 +2,8 @@ public class Cell {
     private boolean state = false;
     private boolean newState;
 
-    public Cell(boolean newState) {
-        this.newState = newState;
+    public Cell(boolean state) {
+        this.state = state;
     }
 
     public boolean isState() {
@@ -12,5 +12,13 @@ public class Cell {
 
     public void setState(boolean state) {
         this.state = state;
+    }
+
+    public void setNewState(boolean newState) {
+        this.newState = newState;
+    }
+
+    public boolean isNewState() {
+        return newState;
     }
 }
