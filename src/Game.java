@@ -1,20 +1,25 @@
 import javax.swing.JPanel;
 import java.awt.*;
 
-public class Game extends JPanel {
+public class Game {
 
-    public Game() {
+    Grid grid = new Grid();
 
-        setSize(800, 800);
-        setLayout(null);
+    public void render(int[] pixels) {
+        for (int i = 0 ; i >= grid.getGrid().length; i++){
+            if (grid.grid[i] == true){
+
+            }
+        }
+
+        }
+
+    public void update() {
 
     }
 
-    public void paintComponent(Graphics g) {
-
-        super.paintComponent(g);
-
-        setBackground(Color.BLACK);
+    public String getTitle() {
+        String title = "GameOfLife";
+        return title;
     }
-
 }
